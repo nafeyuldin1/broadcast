@@ -1,339 +1,321 @@
-<!-- /sections/footer.liquid -->
+{%- assign newsletter_block = section.blocks | where: 'type', 'newsletter' | first -%}
 
-{%- liquid
-  assign blocks_size = section.blocks.size
-  assign logo = section.settings.logo
-  assign inline_blocks = ''
-  assign inline_blocks_placeholder = '####inline-blocks@@@@'
-  assign border_color = section.settings.border_color
-  assign one_third_block_count = 0
-  assign blocks_code = ''
-  assign blocks_width = 0
--%}
+{%- if section.blocks.size > 3 -%}
+<style>
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} {
+      {%- if newsletter_block != blank -%}
+        --footer-block-list-gap: var(--spacing-10);
+      {%- endif -%}
 
-{%- style -%}
-  .site-footer-wrapper {
-    --PT: {{ section.settings.padding_top }}px;
-    --PB: {{ section.settings.padding_bottom }}px;
-    --item-count: {{ blocks_size }};
+      --footer-block-list-justify-content: space-between;
+    }
   }
+</style>
+{%- endif -%}
 
-  {% unless border_color == 'rgba(0,0,0,0)' or border_color == blank %}
-    .shopify-section-group-group-footer { --border: {{ border_color }}; }
-    .shopify-section-group-group-footer .field { --border: {{ border_color }}; }
-  {% endunless %}
-{%- endstyle -%}
+<div class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      {%- comment -%}
+      ------------------------------------------------------------------------------------------------------------------
+      BLOCK AREA
+      ------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
 
-<footer class="site-footer-wrapper section-padding" data-section-id="{{ section.id }}" data-section-type="footer">
-  <div class="site-footer wrapper--full-padded">
-    {%- if logo -%}
-      {%- liquid
-        assign logo_width = section.settings.logo_image_width
-        assign logo_width_px = logo_width | append: 'px'
-        assign logo_width_2x = logo_width | times: 2
-        assign logo_width_3x = logo_width | times: 3
-        assign logo_widths = logo_width | append: ',' | append: logo_width_2x | append: ',' | append: logo_width_3x
-        assign logo_alt = logo.alt | default: shop.name | strip_html | escape
-      -%}
-      <div class="footer__logo__wrapper">
-        <a href="{{ routes.root_url }}" class="footer__logo" style="width: {{ logo_width_px }};" aria-label="{{ 'general.accessibility.footer_logo' | t }}">
-          {%- render 'image' image: logo, width: logo_width_2x, widths: logo_widths, sizes: logo_width_px, alt: logo_alt -%}
-        </a>
-      </div>
-    {%- endif -%}
-
-    {%- if section.blocks.size > 0 -%}
-      <collapsible-elements>
-        <div class="footer__blocks">
+      {%- if section.blocks.size > 0 -%}
+        <div class="footer__block-list empty:hidden">
           {%- for block in section.blocks -%}
-            {%- capture blocks_code -%}
-              {{ blocks_code }}
+            {%- case block.type -%}
+              {%- when 'text' -%}
+                {%- if block.settings.title != blank or block.settings.content != blank -%}
+                  <div class="footer__block footer__block--text" {{ block.shopify_attributes }}>
+                    {%- if block.settings.title != blank -%}
+                      <p class="bold">{{ block.settings.title | escape }}</p>
+                    {%- endif -%}
 
-              {%- liquid
-                assign block_type = block.type
-                assign title = block.settings.title
-                assign text = block.settings.text
-                assign show_social_links = block.settings.show_social_links
-                assign enable_accordion = block.settings.enable_accordion
-                assign column_width = block.settings.column_width
-                assign blocks_width = blocks_width | plus: block.settings.column_width
-                if block.settings.column_width == 33
-                  assign one_third_block_count = one_third_block_count | plus: 1
-                endif
-
-                capture block_style
-                  echo '--desktop-width: ' | append: column_width | append: '%;'
-                endcapture
-
-                if block_type == 'linklist' or block_type == 'social' or block_type == 'text'
-                  if block_type == 'linklist'
-                    assign linklist = linklists[block.settings.linklist]
-                    assign title = title | default: linklist.title
-                  endif
-
-                  if enable_accordion and title != blank
-                    assign enable_accordion = true
-                  else
-                    assign enable_accordion = false
-                  endif
-                endif
-              -%}
-
-              {%- case block_type -%}
-                {%- when 'linklist' -%}
-                  <details class="footer__block footer__block--menu{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
-                    <summary class="{% if title != blank %}h5 footer__block__title{% if enable_accordion %} accordion__title{% endif %}{% else %}hidden{% endif %}" data-collapsible-trigger>
-                      {%- if title != blank -%}
-                        {{ title | escape }}
-                      {%- else -%}
-                        &nbsp;
-                      {%- endif -%}
-
-                      {%- render 'icon-plus' -%}
-                      {%- render 'icon-minus' -%}
-                    </summary>
-
-                    {%- if linklist != blank -%}
-                      <div data-collapsible-body>
-                        <ul class="footer__quicklinks unstyled{% if enable_accordion %} accordion__content{% endif %}" data-collapsible-content>
-                          {%- for link in linklist.links -%}
-                            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                          {%- endfor -%}
-                        </ul>
+                    {%- if block.settings.content != blank -%}
+                      <div class="prose text-subdued">
+                        {{- block.settings.content -}}
                       </div>
                     {%- endif -%}
-                  </details>
+                  </div>
+                {%- endif -%}
 
-                {%- when 'page' -%}
-                  {%- assign page = pages[block.settings.page] -%}
+              {%- when 'links' -%}
+                {%- if block.settings.menu != blank -%}
+                  <div class="footer__block footer__block--menu" {{ block.shopify_attributes }}>
+                    {%- if block.settings.show_menu_title -%}
+                      <p class="bold">{{ block.settings.menu.title }}</p>
+                    {%- endif -%}
 
-                  {%- if page == blank or page.empty? -%}
-                    <details class="footer__block footer__block--page{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
-                      <summary class="h5 footer__block__title{% if enable_accordion %} accordion__title{% endif %}" data-collapsible-trigger>
-                        {%- if title != blank -%}
-                          {{ title }}
-                        {%- else -%}
-                          {{ shop.name }}
-                        {%- endif -%}
+                    <ul class="v-stack gap-3" role="list">
+                      {%- for link in block.settings.menu.links -%}
+                        <li>
+                          <a href="{{ link.url }}" class="inline-block link-faded break-all">{{ link.title }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
 
-                        {%- render 'icon-plus' -%}
-                        {%- render 'icon-minus' -%}
-                      </summary>
-
-                      <div data-collapsible-body>
-                        <div class="rte{% if enable_accordion %} accordion__content{% endif %}" data-collapsible-content>{{ 'home_page.onboarding.no_content' | t }}</div>
-                      </div>
-                    </details>
-                  {%- else -%}
-                    <details class="footer__block footer__block--page{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
-                      <summary class="h5 footer__block__title{% if enable_accordion %} accordion__title{% endif %}" data-collapsible-trigger>
-                        {%- if title != blank -%}
-                          {{ title }}
-                        {%- else -%}
-                          {{ page.title | escape }}
-                        {%- endif -%}
-
-                        {%- render 'icon-plus' -%}
-                        {%- render 'icon-minus' -%}
-                      </summary>
-
-                      <div data-collapsible-body>
-                        <div class="rte{% if enable_accordion %} accordion__content{% endif %}" data-collapsible-content>{{ page.content }}</div>
-                      </div>
-                    </details>
+              {%- when 'newsletter' -%}
+                <div class="footer__block footer__block--newsletter" {{ block.shopify_attributes }}>
+                  {%- if block.settings.image != blank -%}
+                    {%- capture sizes -%}{{ block.settings.image_width }}px{%- endcapture -%}
+                    {%- capture widths -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 | at_most: block.settings.image.width }}{%- endcapture -%}
+                    {%- capture style -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
+                    {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', style: style, sizes: sizes, widths: widths -}}
                   {%- endif -%}
 
-                {%- when 'social' -%}
-                  <details class="footer__block footer__block--social{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
-                    <summary class="{% if title != blank %}h5 footer__block__title{% if enable_accordion %} accordion__title{% endif %}{% else %}hidden{% endif %}" data-collapsible-trigger>
-                      {%- if title != blank -%}
-                        {{ title | escape }}
-                      {%- else -%}
-                        &nbsp;
-                      {%- endif -%}
+                  <div class="v-stack gap-6">
+                    {%- if block.settings.title != blank -%}
+                      <p class="{{ block.settings.heading_size }}">{{- block.settings.title | escape -}}</p>
+                    {%- endif -%}
 
-                      {%- render 'icon-plus' -%}
-                      {%- render 'icon-minus' -%}
-                    </summary>
-
-                    <div data-collapsible-body>
-                      <div class="{% if enable_accordion %} accordion__content{% endif %}" data-collapsible-content>
-                        {%- if text != blank -%}
-                          <div class="rte footer__social__text">{{ text }}</div>
-                        {%- endif -%}
-
-                        {%- render 'social-icons' enable_follow_on_shop: block.settings.enable_follow_on_shop -%}
+                    {%- if block.settings.content != blank -%}
+                      <div class="prose text-subdued">
+                        {{- block.settings.content -}}
                       </div>
-                    </div>
-                  </details>
+                    {%- endif -%}
 
-                {%- when 'text' -%}
-                  <details class="footer__block footer__block--text{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
-                    <summary class="{% if title != blank %}h5 footer__block__title{% if enable_accordion %} accordion__title{% endif %}{% else %}hidden{% endif %}" data-collapsible-trigger>
-                      {%- if title != blank -%}
-                        {{ title | escape }}
+                    {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+                      {%- if form.posted_successfully? -%}
+                        {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+                        {%- render 'banner', content: success_message, status: 'success' -%}
                       {%- else -%}
-                        &nbsp;
-                      {%- endif -%}
-
-                      {%- render 'icon-plus' -%}
-                      {%- render 'icon-minus' -%}
-                    </summary>
-
-                    <div data-collapsible-body>
-                      <div class="{% if enable_accordion %}accordion__content{% endif %}" data-collapsible-content>
-                        {%- if block.settings.image -%}
-                          <div class="footer__block__image" style="width: {{ block.settings.image_width }}px;">
-                            {%- render 'image' image: block.settings.image -%}
-                          </div>
+                        {%- if form.errors -%}
+                          {%- capture error_message -%}{{ form.errors.translated_fields['email'] }} {{ form.errors.messages['email'] }}{%- endcapture -%}
+                          {%- render 'banner', content: error_message, status: 'error' -%}
                         {%- endif -%}
 
-                        {%- if text != blank -%}
-                          <div class="rte">{{ text }}</div>
-                        {%- endif -%}
-                      </div>
-                    </div>
-                  </details>
+                        <input type="hidden" name="contact[tags]" value="newsletter">
 
-                {%- when 'newsletter' -%}
-                  <div class="footer__block footer__block--newsletter" style="{{ block_style }}" {{ block.shopify_attributes }}>
-                    <div class="footer__newsletter__wrapper">
-                      {%- if title != blank -%}
-                        <h2 class="h5 footer__block__title">{{ title }}</h2>
+                        {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
+                        {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
                       {%- endif -%}
-
-                      {%- if text != blank -%}
-                        <div class="rte footer__newsletter__text">{{ text }}</div>
-                      {%- endif -%}
-
-                      {%- render 'newsletter-form' block: block, footer: true -%}
-
-                      {%- if show_social_links -%}
-                        {%- render 'social-icons' modifier: 'socials--newsletter' -%}
-                      {%- endif -%}
-                    </div>
+                    {%- endform -%}
                   </div>
-
-                {%- when 'divider' -%}
-                  <div class="footer__block footer__block--divider{{ inline_blocks_placeholder }}" style="{{ block_style }}">
-                    {%- render 'divider' block: block -%}
-                  </div>
-              {%- endcase -%}
-            {%- endcapture -%}
+                </div>
+            {%- endcase -%}
           {%- endfor -%}
-
-          {%- liquid
-            if blocks_width <= 100
-              assign inline_blocks = ' footer__block--divider--inline'
-            endif
-
-            if one_third_block_count == blocks_size
-              echo blocks_code | replace: inline_blocks_placeholder, inline_blocks | replace: '--desktop-width: 33%;', '--desktop-width: 33.333333%;'
-            else
-              echo blocks_code | replace: inline_blocks_placeholder, inline_blocks
-            endif
-          -%}
-
         </div>
-      </collapsible-elements>
-    {%- endif -%}
+      {%- endif -%}
+
+      {%- comment -%}
+      ------------------------------------------------------------------------------------------------------------------
+      SECONDARY AREA
+      ------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      <div class="footer__aside empty:hidden">
+        {%- comment -%}
+        ----------------------------------------------------------------------------------------------------------------
+        SOCIAL MEDIA + LOCALIZATION
+        ----------------------------------------------------------------------------------------------------------------
+        {%- endcomment -%}
+
+        {%- if section.settings.show_social_media -%}
+          {%- capture social_media -%}{%- render 'social-media' -%}{%- endcapture -%}
+        {%- endif -%}
+
+        {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+          {%- assign country_selector = true -%}
+        {%- endif -%}
+
+        {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+          {%- assign locale_selector = true -%}
+        {%- endif -%}
+
+        {%- if social_media != blank or country_selector or locale_selector -%}
+          <div class="footer__aside-top">
+            {{- social_media -}}
+
+            {%- if country_selector or locale_selector -%}
+              <div class="h-stack gap-6">
+                {%- if social_media == blank -%}
+                  {%- assign popover_horizontal_position = 'start' -%}
+                {%- else -%}
+                  {%- assign popover_horizontal_position = 'end' -%}
+                {%- endif -%}
+
+                {%- if country_selector -%}
+                  {%- render 'localization-selector', type: 'country', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, popover_horizontal_position: popover_horizontal_position -%}
+                {%- endif -%}
+
+                {%- if locale_selector -%}
+                  {%- render 'localization-selector', type: 'locale', popover_horizontal_position: popover_horizontal_position -%}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        {%- comment -%}
+        ----------------------------------------------------------------------------------------------------------------
+        COPYRIGHT + PAYMENT METHODS
+        ----------------------------------------------------------------------------------------------------------------
+        {%- endcomment -%}
+
+        <div class="footer__aside-bottom">
+          {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+            <div class="footer__payment-icons h-stack wrap gap-2">
+              {%- for type in shop.enabled_payment_types -%}
+                {{- type | payment_type_svg_tag -}}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+
+          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {{ powered_by_link }}</p>
+        </div>
+      </div>
+    </div>
   </div>
-</footer>
+</div>
+
+{%- if section.settings.show_privacy_bar -%}
+  <privacy-bar class="privacy-bar" hidden>
+    <div class="privacy-bar__inner">
+      <button type="button" class="privacy-bar__close" data-action="close">
+        <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>
+        {%- render 'icon' with 'delete' -%}
+      </button>
+
+      <div class="v-stack gap-4">
+        <div class="v-stack gap-2">
+          {%- if section.settings.privacy_bar_title != blank -%}
+            <p class="bold">{{ section.settings.privacy_bar_title | escape }}</p>
+          {%- endif -%}
+
+          {%- if section.settings.privacy_bar_content != blank -%}
+            <div class="prose text-xs">
+              {{- section.settings.privacy_bar_content -}}
+            </div>
+          {%- endif -%}
+        </div>
+
+        <div class="h-stack gap-2">
+          <button type="button" class="button button--sm" data-action="accept">{{ 'general.privacy_bar.accept' | t }}</button>
+          <button type="button" class="button button--sm button--subdued" data-action="decline">{{ 'general.privacy_bar.decline' | t }}</button>
+        </div>
+      </div>
+    </div>
+  </privacy-bar>
+{%- endif -%}
 
 {% schema %}
 {
   "name": "Footer",
+  "class": "shopify-section--footer",
+  "tag": "footer",
   "max_blocks": 5,
   "settings": [
     {
-      "label": "Logo",
-      "type": "image_picker",
-      "id": "logo"
+      "type": "checkbox",
+      "id": "show_social_media",
+      "label": "Show social media",
+      "info": "To configure social media, go to your social media settings.",
+      "default": true
     },
     {
-      "type": "range",
-      "id": "logo_image_width",
-      "label": "Logo width (in pixels)",
-      "min": 50,
-      "max": 400,
-      "step": 5,
-      "unit": "px",
-      "default": 150
-    },
-    {
-      "type": "header",
-      "content": "Section padding"
+      "type": "checkbox",
+      "id": "show_payment_icons",
+      "label": "Show payment icons",
+      "default": true
     },
     {
       "type": "header",
-      "content": "Color"
+      "content": "Country/region selector",
+      "info": "To add a country/region, go to your [currency settings.](/admin/settings/payments)"
     },
     {
-      "type": "color",
-      "id": "border_color",
-      "label": "Borders and lines",
-      "default": "#212121",
-      "info": "Applies to Divider and Newsletter"
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country/region selector",
+      "default": true
     },
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding top",
-      "default": 75
+      "type": "checkbox",
+      "id": "show_country_flag",
+      "label": "Show country flag",
+      "default": true
     },
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding bottom",
-      "default": 30
+      "type": "checkbox",
+      "id": "show_country_name",
+      "label": "Show country name",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Customer privacy bar",
+      "info": "Privacy bar will only be visible if it fulfills the conditions of the [Shopify Customer Privacy API](https://shopify.dev/docs/themes/consent-tracking-api) or inside the theme editor to ease editing."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_privacy_bar",
+      "label": "Show privacy bar",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "privacy_bar_title",
+      "label": "Title",
+      "default": "Cookie policy"
+    },
+    {
+      "type": "richtext",
+      "id": "privacy_bar_content",
+      "label": "Content",
+      "default": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
     }
   ],
-  "blocks" : [
+  "blocks": [
     {
-      "type": "linklist",
-      "name": "Link list",
+      "type": "text",
+      "name": "Text",
       "settings": [
-        {
-          "type": "link_list",
-          "id": "linklist",
-          "label": "Link list",
-          "default": "footer",
-          "info": "This menu won't show dropdown items."
-        },
         {
           "type": "text",
           "id": "title",
-          "label": "Title"
+          "label": "Heading",
+          "default": "About our store"
         },
         {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        },
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Links",
+      "settings": [
         {
-          "type": "header",
-          "content": "Mobile"
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items.",
+          "default": "footer"
         },
         {
           "type": "checkbox",
-          "id": "enable_accordion",
-          "label": "Enable accordion",
-          "info": "Transform block into accordion element",
-          "default": false
+          "id": "show_menu_title",
+          "label": "Show menu title",
+          "default": true
         }
       ]
     },
@@ -344,306 +326,61 @@
       "settings": [
         {
           "type": "paragraph",
-          "content": "Subscribers are under 'Accepts Marketing' in your [customer admin](/admin/customers)."
+          "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
         },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Newsletter"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_name",
-          "label": "Show name field",
-          "default": false
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button text",
-          "default": "Join"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_arrow",
-          "label": "Show arrow",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "terms",
-          "label": "Show reCAPTCHA terms",
-          "default": true,
-          "info": "Recommended if your online store preferences have spam protection enabled."
-        },
-        {
-          "type": "header",
-          "content": "Button",
-          "info": "Applies if \"Show name field\" is enabled."
-        },
-        {
-          "type": "select",
-          "id": "button_type",
-          "label": "Color",
-          "default": "btn--black",
-          "info": "Full width button only",
-          "options": [
-            {"value": "btn--primary", "label": "Primary"},
-            {"value": "btn--secondary", "label": "Secondary"},
-            {"value": "btn--white", "label": "White"},
-            {"value": "btn--black", "label": "Black"}
-          ]
-        },
-        {
-          "type": "select",
-          "id": "button_size",
-          "label": "Size",
-          "default": "",
-          "options": [
-            { "label": "Small", "value": "btn--small" },
-            { "label": "Medium", "value": "" },
-            { "label": "Large", "value": "btn--large" }
-          ]
-        },
-        {
-          "type": "select",
-          "id": "button_style",
-          "label": "Style",
-          "default": "btn--solid",
-          "options": [
-            { "label": "Solid", "value": "btn--solid" },
-            { "label": "Outline", "value": "btn--outline" },
-            { "label": "Text", "value": "btn--text" }
-          ]
-        },
-        {
-          "type": "header",
-          "content": "Social media icons"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_social_links",
-          "label": "Show social icons",
-          "info": "Edit your social settings and accounts in [Theme settings](/admin/themes/current/editor?context=theme)",
-          "default": false
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        }
-      ]
-    },
-    {
-      "type": "social",
-      "name": "Social",
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "Edit your social settings and accounts in [Theme settings](/admin/themes/current/editor?context=theme)"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Social"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text"
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        },
-        {
-          "type": "header",
-          "content": "Follow on Shop",
-          "info": "Display follow button for your storefront on the Shop app. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_follow_on_shop",
-          "default": false,
-          "label": "Enable Follow on Shop"
-        },
-        {
-          "type": "header",
-          "content": "Mobile"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_accordion",
-          "label": "Enable accordion",
-          "info": "Transform block into accordion element",
-          "default": false
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "name": "Text",
-      "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Image",
+          "info": "600 x 600px .png recommended"
         },
         {
           "type": "range",
           "id": "image_width",
-          "label": "Image width (in pixels)",
           "min": 50,
-          "max": 400,
-          "step": 5,
+          "max": 300,
+          "step": 10,
           "unit": "px",
+          "label": "Image width",
           "default": 150
         },
         {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Title size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h3"
+        },
+        {
           "type": "text",
           "id": "title",
-          "label": "Heading",
-          "default": "Text"
+          "label": "Title",
+          "default": "Sign up to our newsletter"
         },
         {
           "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>Share store details, promotions, or brand content with your customers.</p>"
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        },
-        {
-          "type": "header",
-          "content": "Mobile"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_accordion",
-          "label": "Enable accordion",
-          "info": "Transform block into accordion element",
-          "default": false
-        }
-      ]
-    },
-    {
-      "type": "page",
-      "name": "Page",
-      "settings": [
-        {
-          "id": "page",
-          "type": "page",
-          "label": "Page"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        },
-        {
-          "type": "header",
-          "content": "Mobile"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_accordion",
-          "label": "Enable accordion",
-          "info": "Transform block into accordion element",
-          "default": false
-        }
-      ]
-    },
-    {
-      "type": "divider",
-      "name": "Divider",
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_line",
-          "label": "Show line",
-          "default": true
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 1,
-          "info": "Desktop only"
-        },
-        {
-          "type": "header",
-          "content": "Mobile"
-        },
-        {
-          "type": "range",
-          "id": "padding_top",
-          "min": 0,
-          "max": 50,
-          "step": 1,
-          "unit": "px",
-          "label": "Padding top",
-          "default": 20
-        },
-        {
-          "type": "range",
-          "id": "padding_bottom",
-          "min": 0,
-          "max": 50,
-          "step": 1,
-          "unit": "px",
-          "label": "Padding bottom",
-          "default": 20
+          "id": "content",
+          "label": "Content"
         }
       ]
     }
-  ],
-  "enabled_on": {
-    "groups": ["footer"]
-  }
+  ]
 }
 {% endschema %}

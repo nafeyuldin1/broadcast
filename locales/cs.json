@@ -1,591 +1,422 @@
-
 {
   "general": {
-    "404": {
-      "title": "404-pagina niet gevonden",
-      "subtext_html": "De pagina die je zoekt bestaat niet."
-    },
-    "ie11_support_message": "Deze site heeft beperkte ondersteuning voor je browser. We raden Edge, Chrome, Safari of Firefox aan.",
-    "swatches": {
-      "color": "Kleur"
-    },
-    "siblings": {
-      "label": "Kleur"
-    },
-    "products_with_count": {
-      "one": "{{ count }} product",
-      "other": "{{ count }} producten"
-    },
-    "size_chart": {
-      "title": "Maattabel",
-      "size": "Maat"
-    },
-    "meta": {
-      "tags": "Getagd als \"{{ tags }}\"",
-      "page": "Pagina {{ page }}"
-    },
-    "breadcrumbs": {
-      "home": "Home",
-      "products": "Producten",
-      "go_back": "Terug"
-    },
-    "forms": {
-      "post_error": "Oeps, er ging iets mis. Corrigeer de onderstaande fouten en probeer opnieuw:"
-    },
-    "newsletter_form": {
-      "newsletter_email": "E-mail",
-      "name": "Naam",
-      "submit": "Aanmelden",
-      "placeholder": "E-mailadres",
-      "thank_you": "Bedankt voor je aanmelding!",
-      "thank_you_with_code_html": "Bedankt voor je aanmelding! Gebruik code <span>Discount10</span> voor 10% korting.",
-      "error_message": "Deze klant is al geabonneerd!",
-      "product_notification_for": "Productmelding voor",
-      "newsletter_product_availability": "Meld me wanneer beschikbaar",
-      "notify": "Meld mij",
-      "email": "Jouw e-mail",
-      "email_label": "Vul je e-mail in en we laten het weten zodra het gekozen product beschikbaar is.",
-      "notification_success": "Je e-mail is ontvangen."
-    },
-    "search": {
-      "articles": "Blogberichten",
-      "no_results": "Geen resultaten voor \"{{ terms }}\". Controleer de spelling of gebruik een andere term.",
-      "page": "Pagina",
-      "products": "Producten",
-      "results_pages_with_count": {
-        "one": "{{ count }} pagina",
-        "other": "{{ count }} pagina's"
-      },
-      "results_suggestions_with_count": {
-        "one": "{{ count }} suggestie",
-        "other": "{{ count }} suggesties"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} producten"
-      },
-      "results_with_count": {
-        "one": "{{ count }} resultaat",
-        "other": "{{ count }} resultaten"
-      },
-      "results_with_count_and_term": {
-        "one": "{{ count }} resultaat gevonden voor \"{{ terms }}\"",
-        "other": "{{ count }} resultaten gevonden voor \"{{ terms }}\""
-      },
-      "title": "Zoekresultaten",
-      "search_for": "Zoeken naar \"{{ terms }}\"",
-      "reset": "Resetten",
-      "clear": "Wissen",
-      "suggestions": "Suggesties",
-      "pages": "Pagina's",
-      "placeholder": "Zoek in onze winkel",
-      "search": "Zoeken",
-      "popular_searches": "Populaire zoekopdrachten",
-      "popular_products": "Populaire producten"
-    },
+    "page": "Strana {{ page }}",
+    "home": "Domovská stránka",
     "accessibility": {
-      "skip_to_content": "Ga naar inhoud",
-      "unit_price_separator": "per",
-      "close": "Sluiten",
-      "show_menu": "Menu openen",
-      "exit_menu": "Menu sluiten",
-      "view": "Bekijken",
-      "scroll_to_top": "Scroll naar boven",
-      "scroll_to_product": "Scroll naar product",
-      "scroll_to_logo": "Scroll naar logo",
-      "footer_logo": "Logo in de footer",
-      "slide_image": "Dia-afbeelding"
+      "skip_to_content": "Přejít na obsah",
+      "pagination": "Stránkování",
+      "go_to_page": "Přejít na stránku {{ index }}",
+      "go_to_item": "Přejít na položku {{ index }}",
+      "item_nth_of_count": "Položka {{ index }} z {{ count }}",
+      "drag": "Přetažení",
+      "close": "Zavřít",
+      "next": "Další",
+      "previous": "Předchozí",
+      "play_video": "Přehrát video",
+      "read_more": "Více informací"
     },
-    "cookies": {
-      "title": "Mogen we cookies plaatsen?",
-      "cookies_link": "cookies",
-      "text_html": " gebruikt {{ cookies }} om je ervaring te verbeteren.",
-      "access": "Accepteren"
+    "label": {
+      "color": "Barva",
+      "white": "Bílá",
+      "size": "Velikost"
     },
     "social": {
-      "share_on_facebook": "Delen",
-      "share_on_twitter": "Tweeten",
-      "share_on_pinterest": "Pinnen",
-      "copied_text": "Gekopieerd",
-      "alt_text": {
-        "share_on_facebook": "Delen op Facebook",
-        "share_on_twitter": "Tweeten op Twitter",
-        "share_on_pinterest": "Pinnen op Pinterest"
-      }
+      "follow_on": "Sledovat na {{ social_media }}",
+      "share": "Sdílet",
+      "share_on": "Sdílet na {{ social_media }}",
+      "share_email": "Sdílet e-mailem"
     },
-    "share": {
-      "share": "Delen",
-      "share_url": "Link",
-      "copy_to_clipboard": "Link kopiëren",
-      "success_message": "Link gekopieerd naar klembord"
+    "rating": {
+      "info": "{{ rating_value }} z {{ rating_max }} hvězdiček"
     },
-    "money": {
-      "free": "Gratis"
+    "newsletter": {
+      "email": "E-mail",
+      "subscribe": "Přihlásit se k odběru",
+      "notify_me": "Informujte mě",
+      "subscribed_successfully": "Byli jste přihlášeni k odběru našeho zpravodaje."
     },
-    "pagination": {
-      "prev": "Vorige",
-      "next": "Volgende"
+    "localization": {
+      "country": "Země",
+      "language": "Jazyk"
     },
-    "shop_the_look": {
-      "button": "Shop de look"
+    "privacy_bar": {
+      "accept": "Přijmout",
+      "decline": "Odmítnout"
+    },
+    "on_boarding": {
+      "blog_post_category": "Kategorie",
+      "blog_post_title": "Článek",
+      "blog_post_excerpt": "Napište text o vašem příspěvku na blogu.",
+      "product_vendor": "Dodavatel",
+      "product_title": "Produkt",
+      "product_description": "Napište text o vašem produktu.",
+      "collection_title": "Kolekce"
     }
   },
-  "blogs": {
-    "article": {
-      "by_author": "Door {{ author }}",
-      "older_post": "Oudere berichten",
-      "newer_post": "Nieuwere berichten",
-      "related_products": "Gerelateerde producten",
-      "tags": "Tags",
-      "read_more": "Lees meer",
-      "read_more_descriptive": "Klik hier om het volledige artikel te lezen",
-      "no_articles": "Er zijn geen artikelen beschikbaar.",
-      "back_to": "Terug naar",
-      "all": "Alles"
+  "header": {
+    "general": {
+      "account": "účtu",
+      "open_menu": "Otevřít navigační menu",
+      "open_search": "Otevřít vyhledávání",
+      "open_account": "Otevřít stránku účtu",
+      "open_cart": "Otevřít košík"
+    }
+  },
+  "product": {
+    "general": {
+      "description": "Popis",
+      "view_product": "Zobrazit produkt",
+      "quick_add": "+ Rychlé přidání",
+      "add_to_cart_short": "+ Přidat",
+      "add_to_cart_button": "Přidat do košíku",
+      "pre_order_button": "Rezervace",
+      "sold_out_button": "Vyprodáno",
+      "unavailable_button": "Není k dispozici",
+      "added_to_cart": "Zboží bylo přidáno do vašeho košíku!",
+      "sold_out_badge": "Vyprodáno",
+      "on_sale_badge": "Výprodej",
+      "discount_badge_html": "Ušetřete {{ savings }}",
+      "sku": "Kód:",
+      "variant": "Varianta",
+      "view_in_space": "Zobrazit ve vašem prostoru",
+      "taxes_included": "Včetně DPH.",
+      "taxes_excluded": "Bez DPH.",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Poštovné<\/a> se vypočítá při dokončení objednávky",
+      "size_chart": "Tabulka velikostí",
+      "available_colors_count": {
+        "one": "Dostupné v {{ count }} barvě",
+        "few": "Dostupné v {{ count }} barvách",
+        "many": "Dostupné v {{ count }} barvách",
+        "other": "Dostupné v {{ count }} barvách"
+      }
+    },
+    "gallery": {
+      "close": "Zavřít galerii",
+      "zoom": "Přiblížit",
+      "error": "Obrázek nelze načíst"
+    },
+    "price": {
+      "regular_price": "Běžná cena",
+      "sale_price": "Prodejní cena",
+      "from_price_html": "Od {{ price_min }}"
+    },
+    "quantity": {
+      "label": "Množství",
+      "increase_quantity": "Zvýšit množství",
+      "decrease_quantity": "Snížit množství"
+    },
+    "rating_count": {
+      "zero": "Žádné recenze",
+      "one": "{{ count }} recenze",
+      "few": "{{ count }}  recenze",
+      "many": "{{ count }} recenzí",
+      "other": "{{ count }} recenzí"
+    },
+    "inventory": {
+      "in_stock": "Skladem",
+      "oversell_stock": "Brzy na skladě",
+      "incoming_stock": "Bude naskladněno {{ next_incoming_date }}",
+      "low_stock_with_quantity_count": {
+        "one": "Zbývá pouze {{count}} kus",
+        "few": "Zbývá pouze {{count}} kusy",
+        "many": "Zbývá pouze {{count}} kusů",
+        "other": "Zbývá pouze {{count}} kusů"
+      }
+    },
+    "store_availability": {
+      "view_store_info": "Zobrazit informace o obchodu",
+      "check_other_stores": "Zkontrolovat dostupnost v jiných obchodech",
+      "pick_up_available": "Je možné vyzvednutí",
+      "pick_up_currently_unavailable": "Vyzvednutí v současné době není možné",
+      "pick_up_available_at": "Je možné vyzvednutí na adrese {{ location_name }}",
+      "pick_up_unavailable_at": "Vyzvednutí na adrese {{ location_name }} v současné době není možné"
+    }
+  },
+  "collection": {
+    "general": {
+      "empty_collection": "Tato kolekce je prázdná",
+      "all_collections": "Všechny kolekce",
+      "no_collections": "Tento obchod neobsahuje žádné kolekce.",
+      "continue_shopping": "Pokračovat v nákupu"
+    },
+    "products_count": {
+      "zero": "0 produktů",
+      "one": "1 produkt",
+      "few": "{{ count }} produkty",
+      "many": "{{ count }} produktů",
+      "other": "{{ count }} produktů"
+    },
+    "faceting": {
+      "filters": "Filtry",
+      "filter_and_sort": "Filtr a řazení",
+      "filter_button": "Filtr",
+      "clear_filters": "Smazat vše",
+      "apply_filters": "Použít",
+      "sort_by": "Seřadit podle",
+      "remove_filter": "Odstranit filtr „{{ name }}“",
+      "no_results": "Vybraným filtrům neodpovídají žádné produkty.",
+      "price_range_to": "až",
+      "price_filter_from": "Cena od",
+      "price_filter_to": "Cena do",
+      "price_filter": "{{ min_price }} - {{ max_price }}",
+      "availability_label": "Pouze skladem"
+    }
+  },
+  "blog": {
+    "general": {
+      "empty_blog": "Tento blog je prázdný",
+      "back_to_home": "Zpět na úvodní stránku",
+      "view": "Zobrazit",
+      "all_posts": "Všechny příspěvky"
+    },
+    "post": {
+      "written_by": "Od {{ author }}",
+      "share": "Sdílet",
+      "tags": "Štítky",
+      "continue_reading": "Zobrazit další"
     },
     "comments": {
-      "title": "Laat een reactie achter",
-      "name": "Naam",
+      "leave_comment": "Napsat komentář",
+      "moderated": "Všechny komentáře jsou před zveřejněním moderovány.",
+      "name": "Jméno",
       "email": "E-mail",
-      "comment": "Reactie",
-      "post": "Reactie plaatsen",
-      "moderated": "Let op: reacties worden geplaatst na goedkeuring.",
-      "success_moderated": "Je reactie is verzonden en wordt geplaatst na moderatie.",
-      "success": "Je reactie is geplaatst! Bedankt!",
-      "comments_with_count": {
-        "one": "{{ count }} reactie",
-        "other": "{{ count }} reacties"
+      "message": "Zpráva",
+      "submit": "Odeslat",
+      "comment_sent": "Váš komentář byl odeslán. Zveřejníme ho později, protože náš blog je moderován.",
+      "comment_published": "Váš komentář byl zveřejněn.",
+      "count": {
+        "zero": "{{ count }} komentářů",
+        "one": "{{ count }} komentář",
+        "few": "{{ count }} komentáře",
+        "many": "{{ count }} komentářů",
+        "other": "{{ count }} komentářů"
       }
-    },
-    "sidebar": {
-      "see_more": "Meer weergeven…"
-    }
-  },
-  "cart": {
-    "general": {
-      "title": "Winkelwagen",
-      "vendor": "Verkoper",
-      "remove": "Verwijderen",
-      "subtotal": "Subtotaal",
-      "subtotal_items": "Artikelen",
-      "subtotal_note": "Verzending, belastingen en kortingen worden berekend bij het afrekenen.",
-      "customer_note": "Laat een opmerking achter bij je bestelling.",
-      "cart_notes_label": "Opmerkingen toevoegen.",
-      "products_with_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} producten"
-      },
-      "pair_products": "Te combineren met",
-      "estimate_shipping_label": "Verzendkosten berekenen",
-      "gift_notes_label": "Is dit een cadeau?",
-      "gift_note_attribute": "Cadeaunotitie",
-      "update": "Winkelwagen bijwerken",
-      "checkout": "Afrekenen",
-      "accept_terms": "Je moet onze algemene voorwaarden accepteren.",
-      "accepted_terms": "Voorwaarden geaccepteerd?",
-      "view_cart": "Winkelwagen bekijken",
-      "empty": "Je winkelwagen is leeg",
-      "savings": "Je bespaart",
-      "with": "met",
-      "or": "of",
-      "increase_quantity_label": "Hoeveelheid verhogen",
-      "decrease_quantity_label": "Hoeveelheid verlagen",
-      "quantity_field_label": "Hoeveelheid",
-      "continue_shopping": "Verder winkelen",
-      "discount_label": "Je bespaart {{ amount }} met {{ title }}",
-      "limit_message": "Er zijn geen extra producten beschikbaar om toe te voegen",
-      "add_message": "Je hebt toegevoegd:",
-      "total_message": {
-        "one": "en je hebt {{ count }} product in je winkelwagen",
-        "other": "en je hebt {{ count }} producten in je winkelwagen"
-      },
-      "qualified_shipping_message": "Gefeliciteerd! Je bestelling komt in aanmerking voor"
-    },
-    "shipping_calculator": {
-      "estimate_shipping": "Verzendkosten berekenen",
-      "calculate_shipping": "Verzendkosten berekenen",
-      "calculating": "Bezig met berekenen…",
-      "no_shipping_available": "We verzenden niet naar deze bestemming."
-    }
-  },
-  "collections": {
-    "general": {
-      "title": "Collecties",
-      "view_collection": "Collectie bekijken",
-      "no_matches": "Sorry, er staan hier geen producten.",
-      "link_title": "Bekijk onze collectie {{ title }}",
-      "sort": "Sorteren op",
-      "filter_by": "Filteren op",
-      "filters": "Filters",
-      "show_filters": "Filters tonen",
-      "hide_filters": "Filters verbergen",
-      "clear_filters": "Filters wissen",
-      "no_filters": "Voor deze collectie zijn geen filters beschikbaar",
-      "all": "Alles",
-      "reset": "Resetten",
-      "view_items_with_count": {
-        "one": "{{ count }} item bekijken",
-        "other": "{{ count }} items bekijken"
-      },
-      "show_more": "Meer opties",
-      "items": {
-        "heading": "Collecties",
-        "one": "item",
-        "other": "items"
-      },
-      "colors_with_count": {
-        "one": "kleur",
-        "other": "kleuren"
-      }
-    },
-    "sidebar": {
-      "vendors": "Leveranciers",
-      "no_vendors": "Voeg een leverancier toe aan een product om deze lijst automatisch te vullen.",
-      "tags": "Tags",
-      "no_tags": "Voeg tags toe aan je producten om deze lijst automatisch te vullen."
     }
   },
   "contact": {
     "form": {
-      "name": "Naam",
+      "name": "Jméno",
       "email": "E-mail",
-      "message": "Bericht",
-      "phone": "Telefoonnummer",
-      "subject": "Onderwerp",
-      "send": "Verzenden",
-      "select_default": "Maak een keuze",
-      "required_field_text": "Velden met een sterretje (*) zijn verplicht.",
-      "post_success": "Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op."
+      "message": "Zpráva",
+      "submit": "Poslat zprávu",
+      "success_message": "Vaše zpráva byla odeslána."
     }
   },
   "customer": {
     "account": {
-      "account": "Account",
-      "title": "Mijn account",
-      "details": "Accountdetails",
-      "view_addresses": "Adressen bekijken",
-      "return": "Terug naar accountdetails",
-      "contact_store": "Contact opnemen met de winkel"
-    },
-    "activate_account": {
-      "title": "Account activeren",
-      "subtext": "Maak een wachtwoord aan om je account te activeren.",
-      "password": "Wachtwoord",
-      "password_confirm": "Bevestig wachtwoord",
-      "submit": "Account activeren",
-      "cancel": "Uitnodiging weigeren"
-    },
-    "addresses": {
-      "title": "Je adressen",
-      "default": "Standaard",
-      "add_new": "Nieuw adres toevoegen",
-      "edit_address": "Adres bewerken",
-      "first_name": "Voornaam",
-      "last_name": "Achternaam",
-      "company": "Bedrijf",
-      "address1": "Adresregel 1",
-      "address2": "Adresregel 2",
-      "city": "Plaats",
-      "country": "Land",
-      "province": "Provincie",
-      "zip": "Postcode",
-      "phone": "Telefoon",
-      "set_default": "Instellen als standaardadres",
-      "add": "Adres toevoegen",
-      "update": "Adres bijwerken",
-      "cancel": "Annuleren",
-      "edit": "Bewerken",
-      "delete": "Verwijderen",
-      "delete_confirm": "Weet je zeker dat je dit adres wilt verwijderen?"
+      "welcome": "Vítejte, {{first_name}}",
+      "tagline": "Zobrazit všechny objednávky a spravovat informace o účtu.",
+      "orders": "Objednávky",
+      "addresses": "Adresy",
+      "logout": "Odhlásit se",
+      "no_orders": "Zatím jste nezadali žádné objednávky.",
+      "continue_shopping": "Pokračovat v nákupu"
     },
     "login": {
-      "title": "Inloggen",
+      "title": "Přihlásit se",
       "email": "E-mail",
-      "password": "Wachtwoord",
-      "forgot_password": "Wachtwoord vergeten?",
-      "sign_in": "Inloggen",
-      "cancel": "Terug naar de winkel",
-      "guest_title": "Doorgaan als gast",
-      "guest_continue": "Doorgaan",
-      "create_account_prompt": "Nog geen account?",
-      "create_account_cta": "Registreer hier"
-    },
-    "orders": {
-      "title": "Bestelgeschiedenis",
-      "order_number": "Bestelling",
-      "date": "Datum",
-      "payment_status": "Betaalstatus",
-      "fulfillment_status": "Verzendstatus",
-      "total": "Totaal",
-      "none": "Je hebt nog geen bestellingen geplaatst."
-    },
-    "order": {
-      "title": "Bestelling {{ name }}",
-      "date": "Aangemaakt op {{ date }}",
-      "cancelled": "Bestelling geannuleerd op {{ date }}",
-      "cancelled_reason": "Reden: {{ reason }}",
-      "billing_address": "Factuuradres",
-      "payment_status": "Betaalstatus",
-      "shipping_address": "Bezorgadres",
-      "fulfillment_status": "Verzendstatus",
-      "discount": "Korting",
-      "shipping": "Verzending",
-      "tax": "Belasting",
-      "details": {
-        "product": "Product",
-        "sku": "SKU",
-        "price": "Prijs",
-        "quantity": "Aantal",
-        "total": "Totaal",
-        "fulfilled_at": "Verzonden op {{ date }}",
-        "saved_with": "bespaard met",
-        "subtotal": "Subtotaal"
-      }
+      "password": "Heslo",
+      "submit": "Přihlásit se",
+      "forgot_password": "Zapomněli jste heslo?",
+      "sign_up": "Zaregistrovat se"
     },
     "recover_password": {
-      "title": "Wachtwoord herstellen",
+      "title": "Obnovit heslo",
       "email": "E-mail",
-      "submit": "Verzenden",
-      "cancel": "Annuleren",
-      "subtext": "We sturen je een e-mail om je wachtwoord te resetten.",
-      "success": "We hebben je een e-mail gestuurd met een link om je wachtwoord te wijzigen."
-    },
-    "reset_password": {
-      "title": "Accountwachtwoord resetten",
-      "subtext": "Voer een nieuw wachtwoord in voor {{ email }}",
-      "password": "Wachtwoord",
-      "password_confirm": "Bevestig wachtwoord",
-      "submit": "Wachtwoord resetten"
+      "submit": "Obnovit",
+      "back_to_login": "Zpět na přihlášení",
+      "success_message": "Na vaši adresu byl odeslán e-mail s pokyny pro obnovení hesla."
     },
     "register": {
-      "title": "Account aanmaken",
-      "first_name": "Voornaam",
-      "last_name": "Achternaam",
+      "title": "Zaregistrovat se",
+      "first_name": "Jméno",
+      "last_name": "Příjmení",
       "email": "E-mail",
-      "password": "Wachtwoord",
-      "submit": "Aanmaken",
-      "cancel": "Terug naar de winkel",
-      "sign_in_prompt": "Heb je al een account?",
-      "sign_in_cta": "Log hier in"
+      "password": "Heslo",
+      "accepts_marketing": "Zaregistrujte se k odběru našeho zpravodaje",
+      "submit": "Vytvořit účet",
+      "login": "Přihlásit se"
+    },
+    "activate_account": {
+      "title": "Aktivovat účet",
+      "instructions": "Zadejte heslo pro vytvoření účtu:",
+      "password": "Heslo",
+      "password_confirmation": "Potvrzení hesla",
+      "submit": "Aktivovat",
+      "cancel": "Zrušit"
+    },
+    "reset_password": {
+      "title": "Obnovit heslo",
+      "password": "Heslo",
+      "password_confirmation": "Potvrzení hesla",
+      "submit": "Obnovit"
+    },
+    "order": {
+      "order": "Objednávka",
+      "order_name": "Objednávka {{name}}",
+      "view_details": "Zobrazit detaily objednávky",
+      "back": "Zpět",
+      "date": "Datum",
+      "payment_status": "Stav platby",
+      "fulfillment_status": "Stav zpracování",
+      "cancelled_on": "Zrušeno dne {{date}}. Důvod: {{reason}}",
+      "product": "Produkt",
+      "quantity": "Množství",
+      "fulfillment_with_number": "Vaše objednávka byla odeslána dne {{date}}. Sledujte zásilku pomocí čísla {{tracking_number}}.",
+      "fulfillment": "Vaše objednávka byla odeslána dne {{date}}.",
+      "track_shipment": "Sledovat zásilku",
+      "subtotal": "Mezisoučet",
+      "discount": "Sleva",
+      "shipping": "Doprava",
+      "taxes_included": "Včetně DPH",
+      "taxes_excluded": "Bez DPH",
+      "total_duties": "Cla",
+      "refunded_amount": "Vrácená částka",
+      "total": "Celkem",
+      "shipping_address": "Dodací adresa",
+      "billing_address": "Fakturační adresa"
+    },
+    "addresses": {
+      "no_addresses": "Zatím jste neuložili žádné adresy.",
+      "add_address": "Přidat adresu",
+      "edit_address": "Upravit adresu",
+      "save_address": "Uložit adresu",
+      "edit": "Upravit",
+      "delete": "Smazat",
+      "default_address": "Výchozí adresa",
+      "address_title": "Adresa {{ position }}",
+      "delete_confirm": "Opravdu chcete odstranit tuto adresu? Po potvrzení nelze tento krok vrátit zpět.",
+      "fill_form": "Vyplňte prosím následující informace:",
+      "first_name": "Jméno",
+      "last_name": "Příjmení",
+      "company": "Firma",
+      "phone": "Telefonní číslo",
+      "address1": "Adresa 1",
+      "address2": "Adresa 2",
+      "city": "Město",
+      "zip": "PSČ",
+      "country": "Země",
+      "province": "Provincie",
+      "set_default": "Nastavit jako výchozí adresu"
     }
   },
-  "date_formats": {
-    "full_date": "%d %B %Y",
-    "full_date_and_time": ""
-  },
-  "home_page": {
-    "sections": {
-      "frontpage_title": "Collecties op de homepage",
-      "featured_title": "Uitgelichte collecties",
-      "news_title": "Laatste nieuws"
-    },
-    "onboarding": {
-      "no_products_html": "Je hebt geen producten in je homepage-collectie. Deze placeholder wordt getoond totdat je <a href=\"/admin/custom_collections\">een product aan deze collectie toevoegt</a>.",
-      "add_product": "Product toevoegen",
-      "product_title": "Productnaam",
-      "no_collections_html": "Je hebt hier nog geen collecties om te tonen. <a href=\"/admin/custom_collections\">Voeg collecties toe</a> om ze op de standaard homepage te tonen.",
-      "no_description": "Dit is een voorbeeld van een productbeschrijving. Zodra je een product toevoegt, verandert deze tekst.",
-      "no_content": "Deze sectie bevat momenteel geen content. Voeg content toe via de zijbalk.",
-      "collection_image": "Collectieafbeelding",
-      "collection_title": "Voorbeeldnaam collectie",
-      "size": "Maat",
-      "color": "Kleur"
-    }
-  },
-  "layout": {
-    "customer": {
-      "logged_in_as": "Ingelogd als",
-      "log_out": "Uitloggen",
-      "log_in": "Inloggen",
-      "create_account": "Account aanmaken"
-    },
-    "header": {
-      "menu": "Menu",
-      "search": "Zoeken",
-      "account": "Account",
-      "cart": "Winkelwagen",
-      "gift_card": "Cadeaubon",
-      "gift_card_url": "cadeaubon"
-    },
-    "footer": {
-      "social_platform": "{{ name }} op {{ platform }}",
-      "linklist_title": "Snelle links",
-      "social_title": "Blijf in contact",
-      "newsletter_title": "Nieuwsbrief",
-      "currency": "Valuta",
-      "language": "Taal",
-      "accepted_payments": "Geaccepteerde betalingen"
-    },
-    "search_page": {
-      "singular_article": "Bericht",
-      "singular_page": "Pagina"
-    }
-  },
-  "products": {
+  "cart": {
     "general": {
-      "previous": "Vorige",
-      "next": "Volgende",
-      "from": "Vanaf",
-      "quick_add": "Snel toevoegen",
-      "added_to_cart": "Toegevoegd aan winkelwagen",
-      "recently_viewed": "Recent bekeken",
-      "view_space": "Bekijk in je ruimte",
-      "description": "Beschrijving",
-      "read_more": "Lees meer",
-      "view_product": "Bekijk product",
-      "see_all": "Alles bekijken",
-      "to": "Tot",
-      "complementary_products_title": "Past goed bij",
-      "choose_product": "Kies een product",
-      "product_info": "Selecteer één optie in de sectie-instellingen",
-      "upsell_title": "Maak de look compleet:",
-      "upsell_add_to_cart": "Toevoegen",
-      "upsell_out_of_stock": "Niet op voorraad",
-      "upsell_error_title": "Kies een upsell-product",
-      "upsell_error_info": "Gebruik metafields om hier een product te tonen. Lege upsell-tegels worden niet weergegeven.",
-      "missing_metafield_image": "Gebruik een metafield om hier een afbeelding te tonen. Lege metafields worden niet weergegeven.",
-      "shop_now": "Shop nu"
+      "title": "Košík",
+      "empty": "Váš košík je prázdný",
+      "continue_shopping": "Pokračovat v nákupu",
+      "weight": "Hmotnost",
+      "subtotal": "Mezisoučet",
+      "total": "Celkem",
+      "add_order_note": "Vložit poznámku k objednávce",
+      "edit_order_note": "Upravit poznámku k objednávce",
+      "order_note": "Poznámka k objednávce",
+      "save_note": "Uložit",
+      "view_cart": "Zobrazit košík",
+      "checkout": "Přejít k placení",
+      "we_accept": "Přijímáme",
+      "taxes_and_shipping_policy_at_checkout_html": "Daně a <a href=\"{{ link }}\" class=\"link\">poštovné<\/a> se vypočítají při placení",
+      "taxes_included_but_shipping_at_checkout": "Daň je zahrnuta v ceně, poštovné se vypočítá při placení",
+      "taxes_included_and_shipping_policy_html": "Daň je zahrnuta v ceně. <a href=\"{{ link }}\" class=\"link\">Poštovné<\/a> se vypočítá při placení.",
+      "taxes_and_shipping_at_checkout": "Daň a poštovné se vypočítají při placení"
     },
-    "product": {
-      "regular_price": "Normale prijs",
-      "sold_out": "Uitverkocht",
-      "sale_type": "Kortingstype",
-      "new": "Nieuw",
-      "pre_order": "Pre-order",
-      "on_sale": "In de uitverkoop",
-      "final_sale": "Final sale",
-      "unavailable": "Niet beschikbaar",
-      "compare_at": "Vergelijk met",
-      "unit_price_label": "Stuksprijs",
-      "subscription": "Abonnement",
-      "save": "Opslaan",
-      "off": "Korting",
-      "sku": "SKU",
-      "one_time_purchase": "Eenmalige aankoop",
-      "quantity": "Aantal",
-      "add_to_cart": "Toevoegen aan winkelwagen",
-      "added": "Toegevoegd aan winkelwagen",
-      "vendor": "Verkoper",
-      "type": "Type",
-      "tags": "Tags",
-      "variant_option_image": "Maat",
-      "ask_title": "Stel een vraag over dit product:",
-      "zoom": "Inzoomen",
-      "configure": "Configureren",
-      "select": "Selecteren",
-      "select_value": "Waarde selecteren",
-      "select_color": "Kleur selecteren",
-      "each": "per stuk",
-      "in_stock": "Artikel op voorraad",
-      "out_of_stock": "Artikel niet op voorraad",
-      "item_unavailable": "Artikel niet beschikbaar",
-      "remaining_html": "Wees er snel bij, nog {{ inventory }} over!",
-      "remaining_no_count": "Wees er snel bij! Lage voorraad",
-      "pickup_availability": {
-        "pickup_options": "Ophaalopties",
-        "view_store_info": "Winkelinformatie bekijken",
-        "check_other_stores": "Beschikbaarheid in andere winkels",
-        "pick_up_available": "Beschikbaar voor afhalen",
-        "pick_up_available_at_html": "Af te halen bij <strong>{{ location_name }}</strong>",
-        "pick_up_unavailable_at_html": "Momenteel niet af te halen bij <strong>{{ location_name }}</strong>",
-        "unavailable": "Kan afhaalbeschikbaarheid niet laden",
-        "refresh": "Vernieuwen"
-      }
+    "order": {
+      "product": "Produkt",
+      "total": "Celkem",
+      "quantity": "Množství",
+      "change_quantity": "Změnit počet",
+      "increase_quantity": "Zvýšit množství",
+      "decrease_quantity": "Snížit množství",
+      "remove": "Odstranit"
+    },
+    "free_shipping_bar": {
+      "limit_unreached_html": "Pokud nakoupíte za dalších {{ remaining_amount }}, získáte dopravu zdarma!",
+      "limit_reached_html": "Máte nárok na dopravu zdarma."
+    },
+    "shipping_estimator": {
+      "estimate_shipping": "Odhad ceny dopravy",
+      "country": "Země",
+      "province": "Provincie",
+      "zip": "PSČ",
+      "estimate": "Odhad",
+      "no_results": "Je nám líto, ale na vaši adresu zboží nedoručujeme.",
+      "one_result": "Pro vaši adresu je k dispozici jedna sazba za dopravu:",
+      "multiple_results": "Pro vaši adresu je k dispozici několik sazeb za dopravu:",
+      "error": "Při načítání přepravních sazeb došlo k jedné nebo více chyb:"
     }
   },
-  "countdown": {
-    "days": "Dagen",
-    "hours": "Uren",
-    "minutes": "Minuten",
-    "seconds": "Seconden"
+  "404": {
+    "general": {
+      "title": "Stránka nebyla nalezena",
+      "continue_shopping": "Pokračovat v nákupu"
+    }
   },
-  "gift_cards": {
+  "search": {
+    "general": {
+      "title": "Hledat",
+      "terms": "Výsledky vyhledávání „{{ terms }}“",
+      "search_placeholder": "Hledat...",
+      "products": "Produkty",
+      "collections": "Kolekce",
+      "posts": "Příspěvky na blogu",
+      "pages": "Stránky",
+      "clear": "Vymazat",
+      "view_all": "Zobrazit vše",
+      "view_all_results": "Zobrazit všechny výsledky",
+      "no_results": "Nebyly nalezeny žádné výsledky."
+    },
+    "results_count": {
+      "zero": "0 výsledků pro „{{ terms }}“",
+      "one": "1 výsledek pro „{{ terms }}“",
+      "few": "{{ count }} výsledky pro „{{ terms }}“",
+      "many": "{{ count }} výsledků pro „{{ terms }}“",
+      "other": "{{ count }} výsledků pro „{{ terms }}“"
+    }
+  },
+  "gift_card": {
+    "general": {
+      "title": "Zde je váš dárkový poukaz",
+      "copy": "Kopírovat",
+      "print": "Tisk",
+      "scan": "nebo naskenujte tento QR kód",
+      "back_to_store": "Zpět do obchodu"
+    },
     "issued": {
-      "title": "Hier is je cadeaubon ter waarde van {{ value }} voor {{ shop }}!",
-      "subtext": "Hier is je cadeaubon!",
-      "disabled": "Gedeactiveerd",
-      "expired": "Verlopen op {{ expiry }}",
-      "active": "Geldig tot {{ expiry }}",
-      "redeem": "Gebruik deze code bij het afrekenen om je cadeaubon in te wisselen",
-      "shop_link": "Begin met shoppen",
-      "print": "Afdrukken"
-    }
-  },
-  "recipient": {
-    "form": {
-      "checkbox": "Ik wil dit als cadeau versturen",
-      "email_label": "E-mail van ontvanger",
-      "email": "E-mail",
-      "name_label": "Naam ontvanger (optioneel)",
-      "name": "Naam",
-      "message_label": "Bericht (optioneel)",
-      "message": "Bericht",
-      "max_characters": "Maximaal {{ max_chars }} tekens",
-      "send_on": "JJJJ-MM-DD",
-      "send_on_label": "Verzenden op (optioneel)"
+      "remaining_amount": "Zbývající částka",
+      "out_of_html": "z {{ initial_value }}",
+      "redeem_instructions": "Pomocí tohoto kódu můžete při placení uplatnit svůj dárkový poukaz:",
+      "code": "Kód dárkového poukazu",
+      "expires_on": "Platnost do: {{ expires_on }}",
+      "expired": "Váš dárkový poukaz vypršel nebo byl deaktivován.",
+      "add_to_apple_wallet": "Přidat do Apple peněženky"
     }
   },
   "password": {
-    "page": {
-      "title": "We openen binnenkort",
-      "powered_by": "Deze winkel wordt mogelijk gemaakt door"
+    "general": {
+      "follow_us": "Sledujte nás",
+      "powered_by": "Tento obchod běží na platformě",
+      "store_owner": "Jste majitel obchodu?",
+      "login": "Přihlásit se"
     },
-    "form": {
-      "success": "Bedankt voor je aanmelding!",
-      "newsletter_title": "Meld je aan voor updates",
-      "placeholder": "email@voorbeeld.com",
-      "login": "Wachtwoord"
-    },
-    "buttons": {
-      "sign_up": "Registreren",
-      "store_login": "Inloggen in winkel",
-      "newsletter_signup": "Aanmelden voor nieuwsbrief",
-      "login": "Inloggen"
+    "storefront_access": {
+      "enter_password": "Vstup jen s heslem",
+      "store_access": "Přístup k obchodu",
+      "instructions": "Pro přístup k obchodu zadejte heslo uvedené níže",
+      "password": "Heslo",
+      "enter_store": "Vstoupit do obchodu"
     }
   },
-  "pagefly": {
-    "products": {
-      "product": {
-        "regular_price": "Normale prijs",
-        "sold_out": "Uitverkocht",
-        "unavailable": "Niet beschikbaar",
-        "on_sale": "Aanbieding",
-        "quantity": "Aantal",
-        "add_to_cart": "Toevoegen aan winkelwagen",
-        "back_to_collection": "Terug naar {{ title }}",
-        "view_details": "Details bekijken"
+  "apps": {
+    "shopify_reviews": {
+      "review_info": "Tento produkt má hodnocení {{ rating_value }} z {{ rating_max }} hvězdiček.",
+      "leave_review": "Napsat recenzi",
+      "review_count": {
+        "zero": "Tento produkt zatím nemá žádné recenze.",
+        "one": "Podívejte se na {{ count }} recenzi tohoto produktu.",
+        "few": "Podívejte se na {{ count }} recenze tohoto produktu.",
+        "many": "Podívejte se na {{ count }} recenzi tohoto produktu.",
+        "other": "Podívejte se na {{ count }} recenzi tohoto produktu."
       }
-    },
-    "article": {
-      "tags": "Tags:",
-      "all_topics": "Alle onderwerpen",
-      "by_author": "door {{ author }}",
-      "posted_in": "Geplaatst in",
-      "read_more": "Lees meer",
-      "back_to_blog": "Terug naar {{ title }}"
-    },
-    "comments": {
-      "title": "Laat een reactie achter",
-      "name": "Naam",
-      "email": "E-mail",
-      "message": "Bericht",
-      "post": "Reactie plaatsen",
-      "moderated": "Opmerking: reacties moeten worden goedgekeurd voordat ze worden gepubliceerd.",
-      "success_moderated": "Je reactie is geplaatst. We publiceren deze na goedkeuring.",
-      "success": "Je reactie is geplaatst! Bedankt!",
-      "comments_with_count": {
-        "one": "{{ count }} reactie",
-        "other": "{{ count }} reacties"
-      }
-    },
-    "password_page": {
-      "login_form_message": "Voer het wachtwoord in:",
-      "login_form_password_label": "Wachtwoord",
-      "login_form_password_placeholder": "Jouw wachtwoord",
-      "login_form_submit": "Binnen",
-      "signup_form_email_label": "E-mail",
-      "signup_form_success": "We sturen je een e-mail vlak voordat we openen!",
-      "password_link": "Binnen met wachtwoord"
     }
   }
 }
