@@ -1,0 +1,243 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "text_size": 3,
+            "padding_bottom": 8
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 8
+          }
+        },
+        "icon_2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-recycle",
+            "image": "",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "30 day return policy",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 8
+          }
+        },
+        "icon_kdxAUr": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "image": "",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "Free shipping",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "fit_guide_mLR4HU": {
+          "type": "fit-guide",
+          "disabled": true,
+          "settings": {
+            "heading": "Pasvorm",
+            "selected_segment": "3",
+            "left_label": "Klein",
+            "middle_label": "Normaal",
+            "right_label": "Groot",
+            "fit_color": "",
+            "padding_bottom": 8
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 12
+          }
+        },
+        "description_eRQKyj": {
+          "type": "description",
+          "settings": {
+            "show_read_more": true,
+            "padding_bottom": 0
+          }
+        },
+        "accordion_TARD7r": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "Shipping Policy",
+            "text": "<p>Add your shipping policy information here.</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_4aWNPb": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "Return Policy",
+            "text": "<p>Add your return policy information here.</p>",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "icon_2",
+        "icon_kdxAUr",
+        "variants",
+        "fit_guide_mLR4HU",
+        "buttons",
+        "description_eRQKyj",
+        "accordion_TARD7r",
+        "accordion_4aWNPb"
+      ],
+      "settings": {
+        "product_sticky_enable": false,
+        "variant_image_scroll": true,
+        "image_layout": "thumbnails",
+        "image_size": "normal",
+        "show_cart_bar": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_style": "thumbs",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "1761000386af00b1c5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products",
+            "limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_size": 4,
+        "layout_mobile": "slider",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "custom": {
+      "type": "section-custom-content",
+      "blocks": {
+        "custom-0": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "custom-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Product feature",
+            "heading_size": 8,
+            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.</p>",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f7f7f7",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom-0",
+        "custom-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  
+  },
+  "order": [
+    "main",
+    "1761000386af00b1c5",
+    "related",
+    "custom"
+  ]
+}
