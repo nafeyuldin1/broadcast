@@ -52,6 +52,13 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "message_UYpgHJ": {
+            "type": "message",
+            "settings": {
+              "text": "Vandaag besteld, morgen verzonden!",
+              "url": ""
+            }
+          },
           "message_UE3Qby": {
             "type": "message",
             "settings": {
@@ -61,6 +68,7 @@
           }
         },
         "block_order": [
+          "message_UYpgHJ",
           "message_UE3Qby"
         ],
         "settings": {
