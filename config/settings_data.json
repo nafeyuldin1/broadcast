@@ -52,32 +52,16 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "message": {
+          "message_UE3Qby": {
             "type": "message",
             "settings": {
-              "text": "Betaal later met Klarna",
-              "url": ""
-            }
-          },
-          "message_cFW4k3": {
-            "type": "message",
-            "settings": {
-              "text": "Gratis verzending en 30 dagen bedenktijd",
-              "url": ""
-            }
-          },
-          "message_7GH8Yd": {
-            "type": "message",
-            "settings": {
-              "text": "Bespaar met onze zomerdeals",
+              "text": "gratis verzending",
               "url": ""
             }
           }
         },
         "block_order": [
-          "message",
-          "message_cFW4k3",
-          "message_7GH8Yd"
+          "message_UE3Qby"
         ],
         "settings": {
           "enable_sticky": false,
