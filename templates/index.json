@@ -180,82 +180,12 @@
         "heading_color": "",
         "heading_gradient": ""
       }
-    },
-    "faq_mc7gNB": {
-      "type": "faq",
-      "blocks": {
-        "item_kxKDYL": {
-          "type": "item",
-          "settings": {
-            "title": "Wanneer kan ik mijn bestelling verwachten?",
-            "content": "<p>De gemiddelde levertijd bedraagt 3-7 dagen. Onze producten worden namelijk direct vanuit de leverancier naar jou verzonden. Door dit unieke businessmodel kunnen wij enorm besparen op opslag- en transportkosten en kunnen wij de producten tegen een lagere prijs aanbieden dan de concurrent en de verzendkosten voor eigen rekening nemen.</p>"
-          }
-        },
-        "item_RXtC8n": {
-          "type": "item",
-          "settings": {
-            "title": "De verwachte levertijd is voorbij, waar blijft mijn bestelling?",
-            "content": "<p>In 99% van de gevallen worden de bestellingen binnen de verwachte levertijd geleverd. Helaas kan het weleens voorkomen dat een bestelling in het leveringsproces vertraging oploopt. Je kunt de status van je bestelling checken via de volgende link: </p><p><a href=\"https://zentaro.nl/apps/parcelpanel\">(Klik hier om uw bestelling te volgen)</a></p><p>Heb je 3 dagen na de verwachte levertijd nog niets ontvangen? Neem dan even contact met ons op.</p>"
-          }
-        },
-        "item_9Jithw": {
-          "type": "item",
-          "settings": {
-            "title": "Ik ben niet tevreden over mijn bestelling, kan ik deze retourneren?",
-            "content": "<p>Ja. Je kunt iedere bestelling binnen 14 dagen aan ons retour sturen zonder opgaaf van reden.</p>"
-          }
-        },
-        "item_azpfwL": {
-          "type": "item",
-          "settings": {
-            "title": "Ik wil een artikel retourneren, wat moet ik doen?",
-            "content": "<p>Als je niet tevreden bent over je bestelling kun je deze binnen 14 dagen na ontvangst ruilen of retourneren. Producten dienen in originele staat en voorzien van labels en etiketten geretourneerd te worden. Het product mag geen gebruikssporen bevatten.</p><p>Een retourzending dient altijd te zijn voorzien van Track & Trace code. De zender is altijd verantwoordelijk voor de verzending.</p><p>Als wij de door jou geretourneerde artikelen hebben ontvangen zorgen wij ervoor dat het aankoopbedrag binnen 14 dagen op je rekening staat.</p><p><a href=\"https://cdn.shopify.com/s/files/1/0712/8386/7916/files/Retourformulier_Zentaro.pdf?v=1702288315\">&gt;&gt; Klik hier om een retourformulier te downloaden &lt;&lt;</a></p>"
-          }
-        },
-        "item_GLLJ8C": {
-          "type": "item",
-          "settings": {
-            "title": "Waar vind ik mijn Track en Trace code?",
-            "content": "<p>Op deze pagina <a href=\"https://zentaro.nl/apps/parcelpanel\">(Klik hier) </a>kun je je e-mail adres en ordernummer in te voeren om je pakketje te volgen.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_kxKDYL",
-        "item_RXtC8n",
-        "item_9Jithw",
-        "item_azpfwL",
-        "item_GLLJ8C"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Veel gestelde vragen",
-        "content": "",
-        "team_avatar_width": 160,
-        "support_hours": "",
-        "answer_time": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
     "image-with-text-overlay",
-    "collection-list",
-    "faq_mc7gNB"
+    "collection-list"
   ]
 }
