@@ -230,8 +230,8 @@
           "text"
         ],
         "settings": {
-          "show_social_media": false,
-          "show_payment_icons": false,
+          "show_social_media": true,
+          "show_payment_icons": true,
           "show_country_selector": true,
           "show_country_flag": true,
           "show_country_name": true,
