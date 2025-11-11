@@ -223,11 +223,19 @@
               "title": "Over ons",
               "content": "<p>staat voor slimme, stijlvolle en praktische producten. Wij maken jouw dagelijks leven nét wat makkelijker met zorgvuldig geselecteerde items die werken én verrassen.</p>"
             }
+          },
+          "links_HeKgGp": {
+            "type": "links",
+            "settings": {
+              "menu": "footer",
+              "show_menu_title": true
+            }
           }
         },
         "block_order": [
           "newsletter",
-          "text"
+          "text",
+          "links_HeKgGp"
         ],
         "settings": {
           "show_social_media": true,
