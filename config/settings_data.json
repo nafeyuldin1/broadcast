@@ -96,7 +96,7 @@
           "opening_from": "bottom",
           "layout": "logo_center_navigation_inline",
           "show_social_media": false,
-          "show_locale_selector": false,
+          "show_locale_selector": true,
           "show_country_selector": false,
           "show_country_flag": false,
           "show_country_name": false,
@@ -144,8 +144,8 @@
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
-              "title": "Gratis verzending",
-              "content": "<p>Gratis verzending in heel Nederland en Belgie.</p>"
+              "title": "Kostenloser verstand nach",
+              "content": "<p>Kostenloser versand in ganz Deutschland</p>"
             }
           },
           "customer-support": {
@@ -157,8 +157,8 @@
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
-              "title": "Klantenservice",
-              "content": "<p>We staan altijd voor je klaar. </p>"
+              "title": "Kundenservice",
+              "content": "<p>Wir sind immer fur dich da</p>"
             }
           },
           "discount": {
@@ -170,8 +170,8 @@
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
-              "title": "14 dagen retourgarantie",
-              "content": "<p>Gemakkelijk en snel retourneren</p>"
+              "title": "14 Tage Rückgaberecht",
+              "content": "<p>Einfach und schnell retournieren</p>"
             }
           },
           "payment": {
@@ -183,8 +183,8 @@
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
-              "title": "Veilige betalingen",
-              "content": "<p>Koop met vertrouwen, uw veiligheid is onze prioriteit</p>"
+              "title": "Sichere Zahlung",
+              "content": "<p><strong>Kaufen Sie mit Vertrauen, Ihre Sicherheit hat für uns oberste Priorität</strong></p>"
             }
           }
         },
