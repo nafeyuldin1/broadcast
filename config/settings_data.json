@@ -55,21 +55,21 @@
           "message_UYpgHJ": {
             "type": "message",
             "settings": {
-              "text": "Vandaag besteld, morgen verzonden!",
+              "text": "Kostenloser Versand inklusive track & Trace",
               "url": ""
             }
           },
-          "message_UE3Qby": {
+          "message_Vn4nLK": {
             "type": "message",
             "settings": {
-              "text": "Gratis verzending incl. Track & Trace",
+              "text": "Heute bestellt, morgen versendet",
               "url": ""
             }
           }
         },
         "block_order": [
           "message_UYpgHJ",
-          "message_UE3Qby"
+          "message_Vn4nLK"
         ],
         "settings": {
           "enable_sticky": false,
