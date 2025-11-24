@@ -51,15 +51,8 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
-        "products": [
-          "anti-diefstal-tas",
-          "carryx",
-          "cellulitefitpro",
-          "gleamsilktrimmer",
-          "haarvorm",
-          "massager-pro"
-        ],
+        "collection": "babys-en-kinderen",
+        "products": [],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
@@ -67,10 +60,10 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Bestsellers",
+        "title": "Bestseller",
         "content": "",
         "link_url": "",
-        "link_text": "Alles bekijken",
+        "link_text": "alles ansehen",
         "background": "",
         "background_gradient": "",
         "text_color": "",
