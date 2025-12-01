@@ -206,8 +206,8 @@
         "item_Lzbdmf": {
           "type": "item",
           "settings": {
-            "title": "De verwachte levertijd is voorbij, waar blijft mijn bestelling?",
-            "content": "<p>In 99% van de gevallen worden de bestellingen binnen de verwachte levertijd geleverd. Helaas kan het weleens voorkomen dat een bestelling in het leveringsproces vertraging oploopt. Je kunt de status van je bestelling checken via de volgende link: </p><p><a href=\"https://zentaro.nl/apps/parcelpanel\">(Klik hier om uw bestelling te volgen)</a></p><p>Heb je 3 dagen na de verwachte levertijd nog niets ontvangen? Neem dan even contact met ons op.</p>"
+            "title": "Die angegebene Lieferzeit ist überschritten. Können Sie mir bitte mitteilen, wann meine Bestellung eintrifft?",
+            "content": "<p>In 99 % der Fälle werden Bestellungen innerhalb der erwarteten Lieferzeit geliefert. Es kann jedoch gelegentlich zu Verzögerungen im Lieferprozess kommen. Den aktuellen Status Ihrer Bestellung können Sie jederzeit hier einsehen: </p><p><a href=\"https://vendaera.com/apps/parcelpanel\" title=\"https://vendaera.com/apps/parcelpanel\">(Hier klicken, um Ihre Bestellung zu verfolgen)</a></p><p>Sollten Sie Ihre Bestellung drei Tage nach Ablauf der erwarteten Lieferzeit noch nicht erhalten haben, kontaktieren Sie uns bitte – wir helfen Ihnen gerne weiter.</p>"
           }
         },
         "item_pdPXC3": {
