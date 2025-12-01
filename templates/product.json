@@ -168,15 +168,15 @@
         "item_pdPXC3": {
           "type": "item",
           "settings": {
-            "title": "Ik ben niet tevreden over mijn bestelling, kan ik deze retourneren?",
-            "content": "<p>Ja. Je kunt iedere bestelling binnen 14 dagen aan ons retour sturen zonder opgaaf van reden.</p>"
+            "title": "Ich bin mit meiner Bestellung nicht zufrieden, kann ich sie zurückgeben?",
+            "content": "<p><em>Ja. Du kannst jede Bestellung innerhalb von 14 Tagen ohne Angabe von Gründen an uns zurücksenden.</em></p>"
           }
         },
         "item_Cf93Mz": {
           "type": "item",
           "settings": {
-            "title": "Ik wil een artikel retourneren, wat moet ik doen?",
-            "content": "<p>Als je niet tevreden bent over je bestelling kun je deze binnen 14 dagen na ontvangst ruilen of retourneren. Producten dienen in originele staat en voorzien van labels en etiketten geretourneerd te worden. Het product mag geen gebruikssporen bevatten.</p><p>Een retourzending dient altijd te zijn voorzien van Track & Trace code. De zender is altijd verantwoordelijk voor de verzending.</p><p>Als wij de door jou geretourneerde artikelen hebben ontvangen zorgen wij ervoor dat het aankoopbedrag binnen 14 dagen op je rekening staat.</p><p><a href=\"https://cdn.shopify.com/s/files/1/0712/8386/7916/files/Retourformulier_Zentaro.pdf?v=1702288315\">&gt;&gt; Klik hier om een retourformulier te downloaden &lt;&lt;</a></p>"
+            "title": "Ich möchte einen Artikel zurückgeben, was muss ich tun?",
+            "content": "<p>Wenn du mit deiner Bestellung nicht zufrieden bist, kannst du sie innerhalb von 14 Tagen nach Erhalt umtauschen oder zurücksenden. Die Produkte müssen im Originalzustand und mit allen Etiketten und Labels zurückgeschickt werden. Das Produkt darf keine Gebrauchsspuren aufweisen.<br/><br/>Eine Rücksendung muss immer mit einer Sendungsverfolgungsnummer (Track & Trace) versehen sein. Der Absender ist stets für den Versand verantwortlich.<br/><br/>Sobald wir die von dir zurückgesandten Artikel erhalten haben, sorgen wir dafür, dass der Kaufbetrag innerhalb von 14 Tagen auf deinem Konto gutgeschrieben wird.</p><p><a href=\"https://vendaera.com/pages/retour-formulier\" title=\"https://vendaera.com/pages/retour-formulier\">(Klicke hier, um ein Rücksendeformular herunterzuladen) </a></p>"
           }
         },
         "item_DdEj4A": {
