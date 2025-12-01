@@ -26,7 +26,7 @@
             "text_color": "#0f0f0f",
             "button_background": "#0f0f0f",
             "button_text_color": "#ffffff",
-            "overlay_color": "#ffffff",
+            "overlay_color": "#efe2b9",
             "overlay_opacity": 75,
             "background": "#0f0f0f",
             "background_gradient": ""
@@ -64,12 +64,12 @@
         "content": "",
         "link_url": "",
         "link_text": "alles ansehen",
-        "background": "#ffffff",
+        "background": "#efe2b9",
         "background_gradient": "",
         "text_color": "#0f0f0f",
         "heading_color": "#0f0f0f",
         "heading_gradient": "",
-        "product_card_background": "#0f0f0f",
+        "product_card_background": "#efe2b9",
         "product_card_text_color": ""
       }
     },
@@ -102,7 +102,7 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#0f0f0f",
-        "overlay_color": "#f2f2f2",
+        "overlay_color": "#efe2b9",
         "overlay_opacity": 75
       }
     },
