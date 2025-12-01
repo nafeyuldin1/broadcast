@@ -64,12 +64,12 @@
         "content": "",
         "link_url": "",
         "link_text": "alles ansehen",
-        "background": "#ffffff",
+        "background": "#efe2b9",
         "background_gradient": "",
         "text_color": "#ffffff",
         "heading_color": "#ffffff",
         "heading_gradient": "",
-        "product_card_background": "#efe2b9",
+        "product_card_background": "#ffffff",
         "product_card_text_color": ""
       }
     },
