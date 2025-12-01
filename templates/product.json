@@ -182,8 +182,8 @@
         "item_DdEj4A": {
           "type": "item",
           "settings": {
-            "title": "Waar vind ik mijn Track en Trace code?",
-            "content": "<p>Op deze pagina <a href=\"https://zentaro.nl/apps/parcelpanel\">(Klik hier) </a>kun je je e-mail adres en ordernummer in te voeren om je pakketje te volgen.</p>"
+            "title": "Wo finde ich meinen Track-and-Trace-Code?",
+            "content": "<p><em>Auf dieser Seite (</em><a href=\"https://vendaera.com/apps/parcelpanel\" title=\"https://vendaera.com/apps/parcelpanel\"><em>Klicke hier)</em></a><em> kannst du deine E-Mail-Adresse und deine Bestellnummer eingeben, um dein Paket zu verfolgen.</em></p>"
           }
         }
       },
