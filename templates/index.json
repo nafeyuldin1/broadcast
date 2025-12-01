@@ -66,7 +66,7 @@
         "link_text": "alles ansehen",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#ffffff",
+        "text_color": "#0f0f0f",
         "heading_color": "#0f0f0f",
         "heading_gradient": "",
         "product_card_background": "#0f0f0f",
@@ -105,80 +105,11 @@
         "overlay_color": "#ffffff",
         "overlay_opacity": 75
       }
-    },
-    "collection-list": {
-      "type": "collection-list",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "damesmode",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "huis-tuin",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessiores",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_collections": true,
-        "collections_per_row": 3,
-        "show_progress_bar": false,
-        "subheading": "",
-        "title": "Unsere Kollektionen",
-        "content": "",
-        "link_url": "https://vendaera.com/collections/fashion",
-        "link_text": "Alle anzeigen",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#0f0f0f",
-        "heading_color": "#0f0f0f",
-        "heading_gradient": ""
-      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
-    "image-with-text-overlay",
-    "collection-list"
+    "image-with-text-overlay"
   ]
 }
