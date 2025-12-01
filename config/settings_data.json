@@ -201,9 +201,9 @@
           "heading_tag": "h6",
           "text_alignment": "center",
           "icon_spacing": "small",
-          "background": "",
+          "background": "#f2f2f2",
           "background_gradient": "",
-          "text_color": ""
+          "text_color": "#0f0f0f"
         }
       },
       "footer": {
@@ -246,8 +246,8 @@
           "show_country_name": true,
           "show_locale_selector": false,
           "show_privacy_bar": true,
-          "privacy_bar_title": "Cookie Beleid",
-          "privacy_bar_content": "<p>We gebruiken cookies en vergelijkbare technologieën om de best mogelijke ervaring op onze website te bieden. Raadpleeg ons privacybeleid voor meer informatie.</p>"
+          "privacy_bar_title": "Cookie-Richtlinie",
+          "privacy_bar_content": "<p>Wir verwenden Cookies und ähnliche Technologien, um die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen findest du in unserer Datenschutzerklärung.<br/><br/></p>"
         }
       },
       "newsletter-popup": {

@@ -101,8 +101,8 @@
         "image_size": "auto",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
+        "text_color": "#0f0f0f",
+        "overlay_color": "#f2f2f2",
         "overlay_opacity": 75
       }
     },
@@ -167,10 +167,10 @@
         "content": "",
         "link_url": "",
         "link_text": "Alle anzeigen",
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
+        "text_color": "#0f0f0f",
+        "heading_color": "#0f0f0f",
         "heading_gradient": ""
       }
     }
