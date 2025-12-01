@@ -213,8 +213,8 @@
         "item_pdPXC3": {
           "type": "item",
           "settings": {
-            "title": "Ik ben niet tevreden over mijn bestelling, kan ik deze retourneren?",
-            "content": "<p>Ja. Je kunt iedere bestelling binnen 14 dagen aan ons retour sturen zonder opgaaf van reden.</p>"
+            "title": "Ich bin mit meiner Bestellung nicht zufrieden. Könnte ich diese bitte retournieren?",
+            "content": "<p>Ja, selbstverständlich! Sie können jede Bestellung innerhalb von 14 Tagen ohne Angabe von Gründen an uns zurücksenden.“<br/><br/></p>"
           }
         },
         "item_Cf93Mz": {
