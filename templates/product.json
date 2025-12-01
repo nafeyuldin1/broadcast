@@ -1,1 +1,226 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","disabled":true,"settings":{}},"title":{"type":"title","settings":{"heading_tag":"h2"}},"badges":{"type":"badges","settings":{}},"price":{"type":"price","settings":{"show_taxes_notice":false}},"rating":{"type":"rating","settings":{"show_empty":false}},"liquid_Gkyzha":{"type":"liquid","settings":{"liquid":"<style>\n.usp-list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  font-size: 16px;\n  font-weight: 500;\n}\n\n.usp-item {\n  display: flex;\n  align-items: center;\n  margin-bottom: 8px; \/* space between items *\/\n}\n\n.icon {\n  width: 20px; \/* fixed width so all icons align *\/\n  display: flex;\n  justify-content: center;\n  margin-right: 8px;\n}\n\n.green-dot {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  background-color: #2e7d1f;\n  border-radius: 50%;\n  animation: pulse 1.5s infinite;\n  box-shadow: 0 0 0 rgba(46, 125, 31, 0.7);\n}\n\n@keyframes pulse {\n  0% {\n    box-shadow: 0 0 0 0 rgba(46, 125, 31, 0.7);\n  }\n  70% {\n    box-shadow: 0 0 0 10px rgba(46, 125, 31, 0);\n  }\n  100% {\n    box-shadow: 0 0 0 0 rgba(46, 125, 31, 0);\n  }\n}\n\n.usp-green {\n  color: #2e7d1f;\n}\n\n.usp-black {\n  color: #000;\n}\n\n<\/style>\n<ul class=\"usp-list\">\n  <li class=\"usp-item usp-green\">\n    <span class=\"icon\"><span class=\"green-dot\"><\/span><\/span>\n    <span>Op voorraad, klaar om te verzenden<\/span>\n  <\/li>\n  <li class=\"usp-item usp-black\">\n    <span class=\"icon\">✔<\/span>\n    <span>30 dagen bedenktijd<\/span>\n  <\/li>\n  <li class=\"usp-item usp-black\">\n    <span class=\"icon\">🇳🇱<\/span>\n    <span>Ontworpen in Nederland<\/span>\n  <\/li>\n<\/ul>"}},"liquid_VJ4Ciy":{"type":"liquid","settings":{"liquid":"<div class=\"testimonial-box\">\n  <p>\n    <span class=\"quote\">\"De producten van <strong><\/strong> zijn niet alleen van\n    <strong>prachtig kwaliteit<\/strong> en \n    <strong>geweldige betrouwbaarheid<\/strong>, maar bieden ook het \n    <strong>comfort<\/strong> waar ik altijd naar op zoek was.\"<\/span>\n    - <strong>Annemarie K.<\/strong>\n  <\/p>\n<\/div>"}},"payment_terms":{"type":"payment_terms","settings":{}},"separator":{"type":"separator","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"hide_sold_out_variants":false,"stack_blocks":true,"selector_mode":"block","color_mode":"variant","size_chart_page":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_payment_button":false,"atc_button_background":"","atc_button_text_color":"","payment_button_background":"","payment_button_text_color":""}},"conversion_bear_trust_badges_widget_xnM6JV":{"type":"shopify:\/\/apps\/conversion-bear-trust-badges\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420","settings":{}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"description":{"type":"description","settings":{"collapse_content":false}}},"block_order":["vendor","title","badges","price","rating","liquid_Gkyzha","liquid_VJ4Ciy","payment_terms","separator","variant_picker","buy_buttons","conversion_bear_trust_badges_widget_xnM6JV","quantity_selector","description"],"settings":{"full_width":true,"show_fixed_add_to_cart":true,"desktop_media_width":55,"desktop_media_layout":"carousel_thumbnails_left","mobile_media_size":"expanded","mobile_carousel_control":"free_scroll","enable_video_autoplay":false,"enable_video_looping":true,"enable_image_zoom":false,"max_image_zoom_level":2.5,"background":"","background_gradient":"","text_color":"","input_background":"rgba(0,0,0,0)","input_text_color":""}},"product-recommendations":{"type":"product-recommendations","disabled":true,"settings":{"recommendations_count":6,"products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_per_row_mobile":"1","products_per_row_desktop":3,"subheading":"","title":"Dit zal je ook leuk vinden","content":"","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","product_card_background":"","product_card_text_color":""}},"faq_HpLxFM":{"type":"faq","blocks":{"item_MwarRF":{"type":"item","settings":{"title":"Wanneer kan ik mijn bestelling verwachten?","content":"<p>De gemiddelde levertijd bedraagt 3-7 dagen. Onze producten worden namelijk direct vanuit de leverancier naar jou verzonden. Door dit unieke businessmodel kunnen wij enorm besparen op opslag- en transportkosten en kunnen wij de producten tegen een lagere prijs aanbieden dan de concurrent en de verzendkosten voor eigen rekening nemen.<\/p>"}},"item_Lzbdmf":{"type":"item","settings":{"title":"De verwachte levertijd is voorbij, waar blijft mijn bestelling?","content":"<p>In 99% van de gevallen worden de bestellingen binnen de verwachte levertijd geleverd. Helaas kan het weleens voorkomen dat een bestelling in het leveringsproces vertraging oploopt. Je kunt de status van je bestelling checken via de volgende link: <\/p><p><a href=\"https:\/\/zentaro.nl\/apps\/parcelpanel\">(Klik hier om uw bestelling te volgen)<\/a><\/p><p>Heb je 3 dagen na de verwachte levertijd nog niets ontvangen? Neem dan even contact met ons op.<\/p>"}},"item_pdPXC3":{"type":"item","settings":{"title":"Ik ben niet tevreden over mijn bestelling, kan ik deze retourneren?","content":"<p>Ja. Je kunt iedere bestelling binnen 14 dagen aan ons retour sturen zonder opgaaf van reden.<\/p>"}},"item_Cf93Mz":{"type":"item","settings":{"title":"Ik wil een artikel retourneren, wat moet ik doen?","content":"<p>Als je niet tevreden bent over je bestelling kun je deze binnen 14 dagen na ontvangst ruilen of retourneren. Producten dienen in originele staat en voorzien van labels en etiketten geretourneerd te worden. Het product mag geen gebruikssporen bevatten.<\/p><p>Een retourzending dient altijd te zijn voorzien van Track & Trace code. De zender is altijd verantwoordelijk voor de verzending.<\/p><p>Als wij de door jou geretourneerde artikelen hebben ontvangen zorgen wij ervoor dat het aankoopbedrag binnen 14 dagen op je rekening staat.<\/p><p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0712\/8386\/7916\/files\/Retourformulier_Zentaro.pdf?v=1702288315\">&gt;&gt; Klik hier om een retourformulier te downloaden &lt;&lt;<\/a><\/p>"}},"item_DdEj4A":{"type":"item","settings":{"title":"Waar vind ik mijn Track en Trace code?","content":"<p>Op deze pagina <a href=\"https:\/\/zentaro.nl\/apps\/parcelpanel\">(Klik hier) <\/a>kun je je e-mail adres en ordernummer in te voeren om je pakketje te volgen.<\/p>"}}},"block_order":["item_MwarRF","item_Lzbdmf","item_pdPXC3","item_Cf93Mz","item_DdEj4A"],"name":"FAQ","settings":{"full_width":true,"subheading":"","title":"Veel gestelde vragen","content":"","team_avatar_width":160,"support_hours":"","answer_time":"","button_text":"","button_url":"","text_position":"center","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","button_background":"","button_text_color":"","accordion_background":"","accordion_text_color":""}}},"order":["main","product-recommendations","faq_HpLxFM"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "liquid_Gkyzha": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.usp-list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  font-size: 16px;\n  font-weight: 500;\n}\n\n.usp-item {\n  display: flex;\n  align-items: center;\n  margin-bottom: 8px; /* space between items */\n}\n\n.icon {\n  width: 20px; /* fixed width so all icons align */\n  display: flex;\n  justify-content: center;\n  margin-right: 8px;\n}\n\n.green-dot {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  background-color: #2e7d1f;\n  border-radius: 50%;\n  animation: pulse 1.5s infinite;\n  box-shadow: 0 0 0 rgba(46, 125, 31, 0.7);\n}\n\n@keyframes pulse {\n  0% {\n    box-shadow: 0 0 0 0 rgba(46, 125, 31, 0.7);\n  }\n  70% {\n    box-shadow: 0 0 0 10px rgba(46, 125, 31, 0);\n  }\n  100% {\n    box-shadow: 0 0 0 0 rgba(46, 125, 31, 0);\n  }\n}\n\n.usp-green {\n  color: #2e7d1f;\n}\n\n.usp-black {\n  color: #000;\n}\n\n</style>\n<ul class=\"usp-list\">\n  <li class=\"usp-item usp-green\">\n    <span class=\"icon\"><span class=\"green-dot\"></span></span>\n    <span>Op voorraad, klaar om te verzenden</span>\n  </li>\n  <li class=\"usp-item usp-black\">\n    <span class=\"icon\">✔</span>\n    <span>30 dagen bedenktijd</span>\n  </li>\n  <li class=\"usp-item usp-black\">\n    <span class=\"icon\">🇳🇱</span>\n    <span>Ontworpen in Nederland</span>\n  </li>\n</ul>"
+          }
+        },
+        "liquid_VJ4Ciy": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"testimonial-box\">\n  <p>\n    <span class=\"quote\">\"De producten van <strong></strong> zijn niet alleen van\n    <strong>prachtig kwaliteit</strong> en \n    <strong>geweldige betrouwbaarheid</strong>, maar bieden ook het \n    <strong>comfort</strong> waar ik altijd naar op zoek was.\"</span>\n    - <strong>Annemarie K.</strong>\n  </p>\n</div>"
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "variant",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "liquid_Gkyzha",
+        "liquid_VJ4Ciy",
+        "payment_terms",
+        "separator",
+        "variant_picker",
+        "buy_buttons",
+        "quantity_selector",
+        "description"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "free_scroll",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 2.5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Dit zal je ook leuk vinden",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "faq_HpLxFM": {
+      "type": "faq",
+      "blocks": {
+        "item_MwarRF": {
+          "type": "item",
+          "settings": {
+            "title": "Duitse vertaling:Wann kann ich meine Bestellung erwarten?",
+            "content": "<p><strong>Duitse vertaling:</strong></p><p><em>Die durchschnittliche Lieferzeit beträgt 3–7 Tage. Unsere Produkte werden nämlich direkt vom Lieferanten zu dir geschickt. Durch dieses einzigartige Geschäftsmodell können wir enorme Lager- und Transportkosten einsparen und die Produkte zu einem niedrigeren Preis als die Konkurrenz anbieten sowie die Versandkosten selbst übernehmen.</em></p>"
+          }
+        },
+        "item_Lzbdmf": {
+          "type": "item",
+          "settings": {
+            "title": "De verwachte levertijd is voorbij, waar blijft mijn bestelling?",
+            "content": "<p>In 99% van de gevallen worden de bestellingen binnen de verwachte levertijd geleverd. Helaas kan het weleens voorkomen dat een bestelling in het leveringsproces vertraging oploopt. Je kunt de status van je bestelling checken via de volgende link: </p><p><a href=\"https://zentaro.nl/apps/parcelpanel\">(Klik hier om uw bestelling te volgen)</a></p><p>Heb je 3 dagen na de verwachte levertijd nog niets ontvangen? Neem dan even contact met ons op.</p>"
+          }
+        },
+        "item_pdPXC3": {
+          "type": "item",
+          "settings": {
+            "title": "Ik ben niet tevreden over mijn bestelling, kan ik deze retourneren?",
+            "content": "<p>Ja. Je kunt iedere bestelling binnen 14 dagen aan ons retour sturen zonder opgaaf van reden.</p>"
+          }
+        },
+        "item_Cf93Mz": {
+          "type": "item",
+          "settings": {
+            "title": "Ik wil een artikel retourneren, wat moet ik doen?",
+            "content": "<p>Als je niet tevreden bent over je bestelling kun je deze binnen 14 dagen na ontvangst ruilen of retourneren. Producten dienen in originele staat en voorzien van labels en etiketten geretourneerd te worden. Het product mag geen gebruikssporen bevatten.</p><p>Een retourzending dient altijd te zijn voorzien van Track & Trace code. De zender is altijd verantwoordelijk voor de verzending.</p><p>Als wij de door jou geretourneerde artikelen hebben ontvangen zorgen wij ervoor dat het aankoopbedrag binnen 14 dagen op je rekening staat.</p><p><a href=\"https://cdn.shopify.com/s/files/1/0712/8386/7916/files/Retourformulier_Zentaro.pdf?v=1702288315\">&gt;&gt; Klik hier om een retourformulier te downloaden &lt;&lt;</a></p>"
+          }
+        },
+        "item_DdEj4A": {
+          "type": "item",
+          "settings": {
+            "title": "Waar vind ik mijn Track en Trace code?",
+            "content": "<p>Op deze pagina <a href=\"https://zentaro.nl/apps/parcelpanel\">(Klik hier) </a>kun je je e-mail adres en ordernummer in te voeren om je pakketje te volgen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MwarRF",
+        "item_Lzbdmf",
+        "item_pdPXC3",
+        "item_Cf93Mz",
+        "item_DdEj4A"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Veel gestelde vragen",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "faq_HpLxFM"
+  ]
+}
