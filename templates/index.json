@@ -104,8 +104,8 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#0f0f0f",
-        "overlay_color": "#ffffff",
-        "overlay_opacity": 75
+        "overlay_color": "#fef8ef",
+        "overlay_opacity": 100
       }
     }
   },
