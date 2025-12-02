@@ -27,8 +27,8 @@
             "button_background": "#0f0f0f",
             "button_text_color": "#ffffff",
             "overlay_color": "#ffffff",
-            "overlay_opacity": 75,
-            "background": "#0f0f0f",
+            "overlay_opacity": 69,
+            "background": "#dabb8d",
             "background_gradient": ""
           }
         }
@@ -39,24 +39,26 @@
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
-        "image_size": "auto",
+        "image_size": "sm",
         "controls_type": "numbers",
         "transition_type": "fade_with_text",
         "autoplay": true,
         "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+        "background": "#ececec",
+        "background_gradient": "linear-gradient(60deg, rgba(62, 68, 71, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "babys-en-kinderen",
-        "products": [],
+        "products": [
+          "loungewear-fur-damen"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
-        "products_count": 6,
+        "products_count": 2,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
@@ -64,7 +66,7 @@
         "content": "",
         "link_url": "",
         "link_text": "alles ansehen",
-        "background": "#ffffff",
+        "background": "#fef8ef",
         "background_gradient": "",
         "text_color": "#0f0f0f",
         "heading_color": "#0f0f0f",
@@ -98,7 +100,7 @@
         "full_width": true,
         "allow_transparent_header": true,
         "enable_parallax": false,
-        "image_size": "auto",
+        "image_size": "sm",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#0f0f0f",
