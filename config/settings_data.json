@@ -20,6 +20,7 @@
     "button_style": "fill",
     "background": "#ffecd0",
     "text_color": "#0f0f0f",
+    "warning_color": "#ffecd0",
     "error_color": "#f83a3a",
     "header_background": "#ffecd0",
     "header_text_color": "#0f0f0f",
@@ -32,6 +33,7 @@
     "secondary_button_text_color": "#1a1a1a",
     "product_card_background": "#ffecd0",
     "product_card_text_color": "#0f0f0f",
+    "product_rating_color": "#ffecd0",
     "product_on_sale_accent": "#f83a3a",
     "product_primary_badge_background": "#803cee",
     "heading_font": "barlow_n7",
@@ -261,6 +263,14 @@
           "title": "Signup for our newsletter",
           "button_text": "Subscribe",
           "subtext": "Describe what your customers will receive when subscribing to your newsletter."
+        }
+      },
+      "main-gift-card": {
+        "type": "main-gift-card",
+        "settings": {
+          "show_qr_code": true,
+          "amount_background": "",
+          "amount_text_color": ""
         }
       }
     },
