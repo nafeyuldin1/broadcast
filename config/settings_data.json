@@ -15,7 +15,7 @@
     "block_border_radius": 24,
     "block_shadow_opacity": 10,
     "block_shadow_vertical_offset": 18,
-    "icon_stroke_width": 2,
+    "icon_stroke_width": 1.5,
     "icon_style": "duo",
     "button_style": "fill",
     "background": "#ffecd0",
@@ -90,7 +90,7 @@
           "enable_sticky": false,
           "hide_on_scroll": false,
           "logo": "shopify://shop_images/vendaera_da5b59d3-6502-4f82-83dd-35641371a530.png",
-          "logo_max_width": 205,
+          "logo_max_width": 115,
           "logo_mobile_max_width": 130,
           "menu": "main-menu",
           "sidebar_menu": "",
@@ -105,8 +105,8 @@
           "show_country_name": false,
           "transparent_header_text_color": "#0f0f0f",
           "reduce_padding": true,
-          "background_opacity": 100,
-          "background_blur_radius": 20
+          "background_opacity": 26,
+          "background_blur_radius": 0
         }
       },
       "cart-drawer": {
