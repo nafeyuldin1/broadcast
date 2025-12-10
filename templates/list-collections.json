@@ -14,12 +14,13 @@
       "settings": {
         "collections": [
           "fashion",
-          "tiere"
+          "tiere",
+          "babys-en-kinderen"
         ],
         "collections_per_row": 3,
         "text_color": "#0f0f0f",
         "overlay_color": "#ffffff",
-        "overlay_opacity": 35
+        "overlay_opacity": 29
       }
     }
   },
